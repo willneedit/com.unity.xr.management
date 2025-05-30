@@ -573,7 +573,7 @@ namespace UnityEditor.XR.Management.Metadata
                     var kpi = new KnownPackageInfo();
                     kpi.packageId = package.name;
 
-                    kpi.verifiedVersion = package.versions.verified;
+                    kpi.verifiedVersion = package.versions.recommended;
                     if (string.IsNullOrEmpty(kpi.verifiedVersion))
                         kpi.verifiedVersion = package.versions.latestCompatible;
                     knownPackageInfos.Add(kpi);
